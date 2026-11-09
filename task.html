@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+
+    <div class="container">
+        <aside>
+            <ol class="ol1">
+                <li><a href="tel:+962777386025">Whatsapp</a></li>
+                <li><a href="https://www.instagram.com/">Instagram</a></li>
+                <li><a href="https://wa.me/+962790071295">Telephone</a></li>
+            </ol>
+        </aside>
+        <header>
+            <ol>
+                <li><a href="task.html">Home</a></li>
+                <li><a href="makeup.html">Makeup</a></li>
+                <li>About</li>
+            </ol>
+            <div class="avatar">
+                <div class="name"> LMS</div> <span class="span">Layan Moneer Alsaify</span>
+            </div>
+        </header>
+        <main>
+            <div class="cards">
+                <div class="card">
+                    <a href="makeup.html" target="blank"> Makeup</a>
+<div class="progress"><span style="width:24%;"></span></div>
+                </div>
+                <div class="card1">
+                    <p>Perfumes</p>
+                    <div class="progress"><span style="width:44%;">.....</span></div>
+
+                </div>
+                <div class="card2">
+                    <p>Accessorise</p>
+                    <div class="progress"><span style="width:84%;">....</span></div>
+
+                </div>
+                <div class="card3">
+                    <p> Candles</p>
+                    <div class="progress"><span style="width:60%;"></span></div>
+
+
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="foot">Layan makeup &copy</div>
+        </footer>
+    </div>
+    <div class="background"> <img src="background.jpeg" width="100%" height="100%">
+    </div>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 200px 1fr 100px;
+            grid-template-rows: 100px 1fr 25px;
+            height: 100vh;
+
+        }
+
+        footer {
+            grid-row: 3;
+            grid-column: 1/4;
+            background-color: #ffffff;
+            color: #b44268;
+        }
+
+        .foot {
+            display: flex;
+            justify-content: center;
+        }
+
+        aside {
+            grid-row: 2/3;
+
+
+        }
+
+        header {
+            grid-row: 1;
+            grid-column: 1/3;
+            display: flex;
+            justify-content: space-around;
+
+
+        }
+
+        header ol {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+
+        }
+
+        header ol li {
+            height: 50%;
+
+        }
+
+        .avatar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            color: #b44268;
+        }
+
+        .name {
+            width: 50px;
+            height: 50px;
+            background-color: #b44268;
+            border-radius: 50%;
+            padding: 10px;
+            align-content: center;
+            color: #ffffff;
+            font-size: bold;
+        }
+
+        ol {
+            list-style: none;
+            padding-left: 0px;
+        }
+
+        a {
+            text-decoration: none;
+            color: aliceblue;
+        }
+
+        ol li {
+            background-color: #b44268;
+            color: aliceblue;
+            border: 10px solid #b44268;
+            border-radius: 10px;
+            margin-bottom: 10px;
+
+        }
+
+        .background {
+            position: fixed;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -2;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 1fr 1fr;
+            height: 100%;
+            width: 100%;
+            gap: 20px;
+        }
+
+        main {
+            display: grid;
+            grid-column: 2;
+            grid-row: 2/3;
+            margin: 10px;
+        }
+
+        .card {
+            background: linear-gradient(rgba(143, 49, 80, 0.4), rgba(143, 49, 80, 0.4)),
+                url(meme.jpeg);
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            box-shadow: 3px 3px 3px darkred;
+            width: 100%;
+            height: 100%;
+            padding: 20px;
+            transition: 0.23s;
+
+        }
+
+        .card1 {
+            background: linear-gradient(rgba(143, 49, 80, 0.4), rgba(143, 49, 80, 0.4)), url(prefume.jpeg);
+            background-size: cover;
+            background-position: center;
+            padding: 20px;
+
+            border-radius: 10px;
+            box-shadow: 3px 3px 3px darkred;
+            width: 100%;
+            height: 100%;
+            color: aliceblue;
+            transition: 0.23s;
+
+        }
+        .progress{
+            height: 7px;
+            background-color:whitesmoke;
+            border-radius: 20px;
+            overflow: hidden;
+            margin-top: 250px;
+        }
+.progress span{
+    display: block;
+    height: 100%;
+    background-color: #722c43;
+}
+        .card2 {
+            background: linear-gradient(rgba(143, 49, 80, 0.4), rgba(143, 49, 80, 0.4)), url(acc.webp);
+            background-position: center;
+            background-size: cover;
+            color: aliceblue;
+            box-shadow: 3px 3px 3px darkred;
+            height: 100%;
+            width: 100%;
+            border-radius: 10px;
+            padding: 20px;
+            transition: 0.23s;
+        }
+
+        .card3 {
+            background: linear-gradient(rgba(143, 49, 80, 0.4), rgba(143, 49, 80, 0.4)), url(candle.jpeg);
+            background-position: center;
+            background-size: cover;
+            color: aliceblue;
+            border-radius: 10px;
+            width: 100%;
+            height: 100%;
+            box-shadow: 3px 3px 3px darkred;
+            padding: 20px;
+            transition: 0.23s;
+
+        }
+
+        .card3:hover {
+            transform: translateY(-5px);
+        }
+
+        .card2:hover {
+            transform: translateY(-5px);
+        }
+
+        .card1:hover {
+            transform: translateY(-5px);
+
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        span {
+                    background: linear-gradient( 45deg, #ce8d96, #a17171, #ecd1da);
+                    display: inline-block;
+background-clip: text;
+color: transparent;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+    </style>                                                                                                                               
+
+
+</body>
+
+</html>
